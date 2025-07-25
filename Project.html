@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      margin-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    }
+
+    .logo {
+      font-size: 3rem;
+      color: #a808a8;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    nav a {
+      font-size: 1.8rem;
+      color: white;
+      margin-left: 4rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    nav a:hover {
+      color: #a808a8;
+      border-bottom: 3px solid #a808a8;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 10rem 9% 5rem;
+    }
+
+    .project-section {
+      text-align: center;
+    }
+
+    .project-section h1 {
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      color: #a808a8;
+    }
+
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #a808a8;
+    }
+
+    .card h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .card p {
+      font-size: 1.6rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .card a {
+      font-size: 1.6rem;
+      color: #00cc00;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .card a:hover {
+      color: #a808a8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Ryno</a>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="AboutMe.html">About Me</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Project.html">Projects</a>
+      <a href="ContactMe.html">Contact Me</a>
+    </nav>
+  </header>
+
+  <section class="project-section">
+    <h1><span style="color:#fff;">My </span> Projects</h1>
+
+    <div class="project-cards">
+      <div class="card">
+        <h2>Virtual CV</h2>
+        <p>This is the personal website you're viewing right now! Built using HTML, CSS.</p>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank">View on website</a>
+      </div>
+
+      <div class="card">
+        <h2>Automating Daily Business Processes</h2>
+        <p>Tracks jobs and the equipment used. Handles large data volumes and ensures accurate stock tracking.</p>
+        <a href="https://github.com/BritsJ/cmpg_223" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
